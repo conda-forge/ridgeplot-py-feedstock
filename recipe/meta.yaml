@@ -39,6 +39,8 @@ about:
   summary: Plotting ridgeplots with matplotlib
   license: Apache-2.0
   license_file: LICENSE.txt
+  dev_url: https://github.com/wckdouglas/ridgeplot-py
+  doc_url: https://wckdouglas.github.io/ridgeplot-py/
 
 extra:
   recipe-maintainers:
