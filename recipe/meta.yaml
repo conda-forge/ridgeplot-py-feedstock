@@ -1,5 +1,5 @@
 {% set name = "ridgeplot-py" %}
-{% set version = "0.2.0.post10" %}
+{% set version = "0.2.7" %}
 
 package:
   name: {{ name|lower }}
