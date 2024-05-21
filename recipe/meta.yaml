@@ -1,5 +1,5 @@
 {% set name = "ridgeplot-py" %}
-{% set version = "0.2.7" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: afa5eab4f0379f79afcd1e2b13bae91256e98ee0e7c92e4d042699aaa74cce4e
+  sha256: 9b1164e860572987548b4b0bcbff4f63afa24f601fee2604a96354362534bcf0
 
 build:
   noarch: python
