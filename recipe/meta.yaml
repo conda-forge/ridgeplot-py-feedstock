@@ -12,15 +12,15 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7,<4.0
+    - python {{ python_min }}
     - pip
     - hatchling
   run:
-    - python >=3.7,<4.0
+    - python >={{ python_min }},<4.0
     - matplotlib-base >=3.1.3,<4.0.0
     - more-itertools >=8.9.0,<9.0.0
     - numpy >=1.21.1,<2.0.0
@@ -34,6 +34,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/ridgeplot-py/
